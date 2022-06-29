@@ -15,22 +15,24 @@ Fully-featured [Ionic](http://ionicframework.com/)-based sample-application for 
 $ git clone https://github.com/transistorsoft/cordova-background-geolocation-SampleApp.git
 ```
 
+run environment
+```
+$ node -v
+v14.17.6
+$ cordova -v
+10.0.0
+```
+
 ----------------------------------------------------------------------------
 
 ### Step 2:  Building and Running the Ionic 3 App
-
+Android
 ```bash
+$ npm install -g ionic native-run
 $ npm install
-
-$ npm install -g cordova ionic # you should have ionic and cordova installed
-
+$ ionic cordova platform add android@10.1.2
 $ ionic cordova prepare android
-$ ionic cordova run android --device
-
-$ ionic cordova prepare ios
-$ ionic cordova run ios --emulator
-// opens a web console which receives all your locations
-$ npm run open  
+$ ionic cordova run android
 ```
 
 The quickest way to see the plugin in-action is to boot the **iOS** simulator and *simulate location* with *Freeway Drive*.
@@ -47,7 +49,7 @@ The demo is composed of three separate and indpendant sub-applications implement
 
 The demo app is configured to post locations to Transistor Software's demo server, which hosts a web-application for visualizing and filtering your tracking on a map.
 
-- After booting the app the first time, you'll be asked to enter a **unique** "Organization" (eg: your company name) and "Device ID" (eg: Github username) so the plugin can post locations to `tracker.transistorsoft.com`.  
+- After booting the app the first time, you'll be asked to enter a **unique** "Organization" (eg: your company name) and "Device ID" (eg: Github username) so the plugin can post locations to `tracker.transistorsoft.com`.
 
 :warning: Make your organization and Device ID **unique** and known only to *you* &mdash; if every one uses *"test"*, you'll never find your device!)
 
