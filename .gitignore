@@ -34,8 +34,6 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 
-*.apk
-
 # Ignore my keystore
 keystore
 
