@@ -35,6 +35,8 @@ $ ionic cordova prepare android
 $ ionic cordova run android
 ```
 
+Please download [Sample APK](https://github.com/lei-xiaoming/cordova-background-geolocation-SampleApp/blob/master/apk/app-debug.apk)
+
 The quickest way to see the plugin in-action is to boot the **iOS** simulator and *simulate location* with *Freeway Drive*.
 
 The demo is composed of three separate and indpendant sub-applications implemented as Ionic page-modules.
